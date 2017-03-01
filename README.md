@@ -1,6 +1,8 @@
 # LoweMo.photo’s Himalayas Child Theme
 This is a Wordpress child theme of the popular [Himalayas](https://themegrill.com/themes/himalayas/ "Himalayas - Best Free Modern One Page WordPress Theme 2016") theme. It fixes some things I'm not fond of in the original version. Depending on your needs, this may cause more issues for you than it solves, so use at your own risk. You may wish to fork this to more easily make your own tweaks if my use case does not match yours (and I assume it will not exactly match yours).
 
+![Screenshot](himalayas-child/screenshot.jpg "Screenshot of this theme in use on my website, LoweMo.photo")
+
 ## What it does:
 * Overrides the `text-transform: uppercase;` used in menus, titles, etc. Where I *want* all uppercase, I'll enter it that way.
 * Provides a fancier look for `blockquote` elements and a pullquote version that floats right at 50% of the container width. (Wrap such pull-quotes in an `<aside>` element for better behavior with screen-readers and add `pull` as a class attribute of your `<blockquote>`. If you add class attributes of `alignleft` or `alignright` it will take up 50% of the container width and be floated left/right. 
