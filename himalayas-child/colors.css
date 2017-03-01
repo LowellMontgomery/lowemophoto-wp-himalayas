@@ -1,0 +1,44 @@
+/*
+Following colors are calculated to balance the theme-standard #99F base color
+used in various places. Calculated by: http://www.colorsontheweb.com/Color-Tools/Color-Wizard
+This CSS file is not actually used in the project but is here for reference if we want to pick
+colors which complement the lavender color (#9999FF;) used for links, etc.
+
+Analogous:
+#9999ff
+#bb99ff
+#99bbff
+#ffffff
+#cccccc
+#ffffff
+
+Complementary:
+#9999ff
+#bb99ff
+#ffff99
+
+Split Complementary:
+#9999ff
+#bb99ff
+#ffcc99
+#ccff99
+#cccccc
+#ffffff
+
+Monocromatic:
+#9999ff
+#0000ff
+#ffffff
+#cccccc
+
+Triadic:
+#9999ff
+#ff9999
+#99ff99
+
+Tetradic:
+#9999ff
+#ff99cc
+#99ffcc
+#ffff99
+*/

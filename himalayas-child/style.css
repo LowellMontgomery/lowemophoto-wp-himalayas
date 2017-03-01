@@ -1,0 +1,229 @@
+/*
+Theme Name:  Himalayas Child
+Theme URI:   https://github.com/LowellMontgomery/lowemophoto-wp-himalayas
+Description: A child theme by Lowell Montgomery which tweaks and extends the popular Himalayas theme.
+Author:      Lowell Montgomery
+Author URI:  https://lowemo.photo
+Template:    himalayas
+Version:     1.0.0
+License:     GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags:        Blog, E-Commerce, Portfolio
+Text Domain: himalayas-child
+*/
+
+/* Only using "slider" for a parallax image header on the home page, where a read-more link makes no sense. */
+a.slider-readmore {
+  display: none;
+}
+
+#masthead .header-wrapper .logo img {
+  padding-top: 0.4em;
+	padding-right: 3em;
+}
+
+#masthead .header-wrapper.stick .logo img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+#masthead .header-wrapper .logo img:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+#masthead #site-title {
+	display: none;
+}
+
+.home.transparent .header-wrapper {
+  background: rgba(100, 100, 100, 0.3);
+}
+
+.transparent .header-wrapper, .non-transparent .header-wrapper {
+  background: #666;
+}
+.transparent .header-wrapper.stick, .non-transparent .header-wrapper.stick {
+  background: #666;
+  padding: 0;
+}
+
+.header-wrapper #site-description {
+	border: none;
+}
+
+.slider-wrapper .parallax-overlay {
+  background: none;
+}
+
+.parallax-overlay {
+  background: none;
+}
+
+a {
+  /*color: */
+  color: #99f;
+}
+
+#primary .content-area a {
+  font-weight: 400;
+}
+
+#primary .content-area a:hover {
+  /*color: */
+  font-weight: 700;
+  color: #bb99ff;
+  font-size: 1.1em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+/* Get rid of text-transform: uppercase; (used in header, menu items, etc.) */
+.header-wrapper #site-title, #site-navigation .menu li a {
+  text-transform: none;
+}
+
+#site-navigation .menu li a {
+  letter-spacing: .05em;
+  font-weight: 400;
+}
+
+#menu-navigation ul.sub-menu {
+  background: rgba(100, 100, 100, 0.9) none repeat scroll 0 0 !important;
+  font-weight: 400;
+}
+
+/* Don't allow ugly word-wrap: break-word */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot {
+  word-wrap: normal;
+}
+
+/* Try to avoid any text-transform */
+* {
+  text-transform: none !important;
+}
+
+/* Try to avoid any auto-hyphenation or word-breaks, which are often inappropriate. */
+body,
+.comment-content,
+.entry-content,
+.entry-caption,
+.entry-summary,
+.page-content,
+.type-attachment .entry-title,
+.widget {
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+  word-wrap: normal;
+}
+
+.entry-content p {
+  margin-bottom: 1rem;
+}
+
+#primary.content-area a:hover {
+  /*color: */
+  font-weight: 700;
+  color: #bb99ff;
+	font-size: 1.1em;
+	font-decoration: underline;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wp-caption-text {
+  font-style: italic;
+  margin: 0;
+	text-align: left;
+	line-height: 1.4em;
+}
+
+figcaption.wp-caption-text {
+  padding: 0.2em 0.5em;
+  font: italic 1em "Times New Roman", Georgia, serif;
+}
+
+.wp-caption, img, figure {
+    border: 1px none #fff;
+}
+
+blockquote {
+  margin: 0 1em;
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+/* Special formatting for pull-quotes */
+aside blockquote.pull {
+  color: #99F;
+  line-height: 1.2em;
+  font-size: 1.5em;
+  padding: 0.5em 0.8em;
+  -webkit-box-shadow: 0 0 5px rgba(20,20,20,0.5);
+  -moz-box-shadow: 0 0 5px rgba(20,20,20,0.5);
+  box-shadow: 0 0 5px rgba(20,20,20,0.5);
+}
+
+blockquote.alignright {
+  float: right;
+  width: 50%;
+  border-color: #99F;
+  border-left-width: 1px;
+  border-left-style: solid;
+  padding-left: 1em;
+}
+
+blockquote.alignleft {
+  float: left;
+  width: 50%;
+  border-color: #99F;
+  border-right-width: 1px;
+  border-right-style: solid;
+  padding-right: 1em;
+}
+
+blockquote p:before {
+  display: block;
+  font: italic bold 3em/1.2em "Times New Roman", Georgia, serif;
+	margin-left: -0.3em;
+	margin-bottom: -0.7em;
+  color: #99f;
+  opacity: 0.5;
+	float: left;
+  content: "“"; // Left curved quote
+  vertical-align: -0.2em;
+  padding-right: 0.2em;
+}
+
+p.indent {
+  padding-left: 3em;
+}
+
+#bottom-footer .copyright a {
+  font-weight: 400;
+}
+
+#bottom-footer .copyright a:hover {
+  font-weight: 600;
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: underline;
+}
